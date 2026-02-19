@@ -20,7 +20,7 @@ const path     = require('path');
 const readline = require('readline');
 
 const PROFILES_PATH = path.join(__dirname, 'profiles.json');
-const PROFILES_URL  = 'https://raw.githubusercontent.com/your-org/ble-printer-probe/main/profiles.json';
+const PROFILES_URL  = 'https://raw.githubusercontent.com/derSebastian/ble-printer-probe/main/profiles.json';
 const PROFILES_TTL  = 7 * 24 * 60 * 60 * 1000; // 7 days
 const SCAN_TIMEOUT  = 20000;
 
@@ -139,7 +139,7 @@ function ghUrl(deviceName, snippet) {
         `Paper retraction before first print (y/n): `,
     ].filter(l => l !== null).join('\n');
 
-    return `https://github.com/your-org/ble-printer-probe/issues/new` +
+    return `https://github.com/derSebastian/ble-printer-probe/issues/new` +
            `?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
 }
 
