@@ -1,0 +1,16 @@
+{
+  "name": "ble-printer-probe",
+  "version": "0.1.0",
+  "description": "Identify BLE thermal printers and match them against known profiles",
+  "private": true,
+  "scripts": {
+    "scan": "node cli.js",
+    "list": "node cli.js --list"
+  },
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-26"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
